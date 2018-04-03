@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css" >
+    <link rel="stylesheet" href="static/css/bootstrap-theme.css" >
+</head>
+<body>
+{% include 'user/userNav.html' %}
+{% block content %}
+    <div>content</div>
+{% endblock %}
+
+{% include 'user/userFloor.html' %}
+{% include 'copyright.html' %}
+</body>
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/bootstrap.js" ></script>
+</html>

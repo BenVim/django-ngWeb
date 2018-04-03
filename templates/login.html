@@ -2,19 +2,20 @@
 
 {% block content %}
     <div class="container" style="padding:15px;">
-    <div class="panel panel-default" style="width:300px;margin:auto;    ">
+    <div class="panel panel-default" style="width:350px;margin:auto;    ">
         <div class="panel-heading">
     <h3 class="panel-title text-center">登  录</h3>
   </div>
         <div class="panel-body">
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">电子邮箱</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+    <label for="username">用户名或电子邮箱</label>
+    <input type="text" name="username" class="form-control" id="username" placeholder="用户名/电子邮箱">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">密码</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="password">密码</label>
+    <input type="password" name="password" class="form-control" id="password" placeholder="登录密码">
   </div>
 
   <button type="submit" class="btn btn-info btn-block">登  录</button>

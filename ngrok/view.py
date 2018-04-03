@@ -1,8 +1,13 @@
 import datetime
 
+from django import forms
 from django.http import HttpResponse
 from django.shortcuts import render
 
+
+class AddForm(forms.Form):
+    username= forms.CharField()
+    password = forms.CharField()
 
 def hello(request):
     return HttpResponse("hello world!")
@@ -34,6 +39,22 @@ def register(request):
     return render(request, 'register.html', context)
 
 def login(requset):
+
+    if requset.method == "POST":
+        form = AddForm(requset.POST)
+        print(form)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+
+            print(username)
+            print(password)
+
+
+
+        else:
+            print("fuck")
+
     context = {}
     context['hello'] = "abc"
     return render(requset, 'login.html', context)

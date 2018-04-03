@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url
 from . import view
+from ngrokApp import views
 
 admin.autodiscover()
 
@@ -27,8 +28,8 @@ urlpatterns = [
     url(r'time', view.current_datetime),
     url(r'download', view.client_download),
     url(r'about', view.about),
-    url(r'register', view.register),
-    url(r'login', view.login),
+    url(r'register', views.register),
+    url(r'login', views.login),
     url(r'doc', view.doc),
     url(r'qq', view.qq),
     url(r'forget', view.forget),
