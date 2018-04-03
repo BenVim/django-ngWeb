@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css" >
+    <link rel="stylesheet" href="static/css/bootstrap-theme.css" >
+    <script src="static/js/bootstrap.js" ></script>
+</head>
+<body>
+{% include 'nav.html' %}
+{% block content %}
+    <div>content</div>
+{% endblock %}
+
+{% include 'floor.html' %}
+{% include 'copyright.html' %}
+</body>
+</html>

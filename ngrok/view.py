@@ -19,22 +19,26 @@ def current_datetime(request):
     return HttpResponse(html)
 
 def client_download(request):
-    now = datetime.datetime.now()
-    html = "<html><body>Client DownLoad!!! %s.</body></html>" % now
-    return HttpResponse(html)
+    context = {}
+    context['hello'] = "abc"
+    return render(request, 'download.html', context)
 
 def about(request):
-    html = "<html><body>about ours</body></html>"
-    return HttpResponse(html)
+    context = {}
+    context['hello'] = "abc"
+    return render(request, 'about.html', context)
 
 def register(request):
-    html = "<html><body>register</body></html>"
-    return HttpResponse(html)
+    context = {}
+    context['hello'] = "abc"
+    return render(request, 'register.html', context)
 
 def login(requset):
-    html = "<html><body>login</body></html>"
-    return HttpResponse(html)
+    context = {}
+    context['hello'] = "abc"
+    return render(requset, 'login.html', context)
 
 def doc(request):
-    html = "<html><body>doc</body></html>"
-    return HttpResponse(html)
+    context = {}
+    context['hello'] = "abc"
+    return render(request, 'docment.html', context)

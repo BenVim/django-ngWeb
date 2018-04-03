@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
+{% block content %}
 <a href="/" target="">首页</a>
 <a href="download" target="">客户端下载</a>
 <a href="doc" target="">使用教程</a>
@@ -13,7 +8,8 @@
 <a href="register" target="">注册</a>
 <a href="login" target="">登录</a>
 <a href="user" target="">用户中心</a>
+{% load static %}
+<img src="{% static "my_app/example.jpg" %}" alt="My image"/>
 
+{% endblock %}
 
-</body>
-</html>
