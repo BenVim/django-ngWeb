@@ -1,15 +1,33 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<a href="/" target="">首页</a>
-<a href="download" target="">客户端下载</a>
-<a href="doc" target="">使用教程</a>
-<a href="about" target="">关于我们</a>
-<a href="register" target="">注册</a>
-<a href="login" target="">登录</a>
-<a href="user" target="">用户中心</a>
-{% load static %}
-<img src="{% static "my_app/example.jpg" %}" alt="My image"/>
+
+<div class="jumbotron" style="background: url(/static/images/banner.png) center center;height: 500px; margin-bottom: 0;">
+    <div class="container">
+        <h1 style="color:#fff; float:right;">实现内外网通信</h1>
+  <p style="color:#ffff00; float:right; width:500px;clear:both; text-align: right; padding-top: 50px;">不仅实现了http服务的端口转发同时支持tcp的端口，在外网可以通过ssh等方式连接服务器</p>
+  <p style="clear:both;"><a class="btn btn-primary btn-lg " style="float:right;" href="register" role="button">立即注册</a></p>
+    </div>
+</div>
+
+    <div class="jumbotron" style="height: 400px;">
+        <div class="container" style="background: url(/static/images/join-box1.png) no-repeat right center;height: 400px;">
+            <h2>为什么使用Sunny-Ngrok？</h2>
+            <ul>
+                <li>提供免费内网穿透服务，免费服务器支持绑定自定义域名</li>
+                <li>管理内网服务器，内网web进行演示</li>
+                <li>快速开发微信程序和第三方支付平台调试</li>
+                <li>本地WEB外网访问、本地开发微信、TCP端口转发</li>
+                <li>本站新增FRP服务器，基于 FRP 实现https、udp转发</li>
+                <li>无需任何配置，下载客户端之后直接一条命令让外网访问您的内网不再是距离</li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="container" style="height: 400px; background:url(/static/images/join-box2.png) no-repeat left center; ">
+
+    </div>
 
 {% endblock %}
 

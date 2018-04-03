@@ -42,3 +42,9 @@ def doc(request):
     context = {}
     context['hello'] = "abc"
     return render(request, 'docment.html', context)
+
+
+def qq(request):
+    context = {}
+    context['hello'] = "abc"
+    return render(request, 'qq.html', context)
