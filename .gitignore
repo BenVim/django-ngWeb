@@ -5,3 +5,4 @@ composer.lock
 .pyc
 *.pyc
 
+.venv
