@@ -31,5 +31,6 @@ urlpatterns = [
     url(r'login', view.login),
     url(r'doc', view.doc),
     url(r'qq', view.qq),
+    url(r'forget', view.forget),
 
 ]

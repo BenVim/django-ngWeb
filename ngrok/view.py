@@ -48,3 +48,8 @@ def qq(request):
     context = {}
     context['hello'] = "abc"
     return render(request, 'qq.html', context)
+
+def forget(request):
+    context = {}
+    context['hello'] = "abc"
+    return render(request, 'forget.html', context)
