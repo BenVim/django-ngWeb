@@ -25,6 +25,7 @@ admin.autodiscover()
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', view.index),
+    url(r'index', view.index),
     url(r'time', view.current_datetime),
     url(r'download', view.client_download),
     url(r'about', view.about),
@@ -33,5 +34,6 @@ urlpatterns = [
     url(r'doc', view.doc),
     url(r'qq', view.qq),
     url(r'forget', view.forget),
+    url(r'user', views.userCenter),
 
 ]
