@@ -2,5 +2,48 @@
 
 {%  block content %}
 
-    download
+   <div class="container" style="margin-top:20px;">
+        <div class="row">
+            <div class="col-md-7">
+               <div class="h4"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> 客户端下载</div>
+         <table class="table table-hover">
+             <thead>
+                <th>系统类型</th>
+               <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 32位</button></td>
+                    <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 64位</button></td>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>windows</td>
+                   <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 32位</button></td>
+                    <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 64位</button></td>
+                </tr>
+                <tr>
+                    <td>MacOS X</td>
+                    <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 32位</button></td>
+                    <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 64位</button></td>
+                </tr>
+                <tr>
+                    <td>Linux</td>
+                    <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 32位</button></td>
+                    <td><button class="btn btn-default"><span class="glyphicon glyphicon-cloud-download"></span> 64位</button></td>
+                </tr>
+             </tbody>
+         </table>
+        <p>大部分64位操作系统兼容32位的natapp,所以不清楚的同学下载32位的即可</p>
+        <p>如何使用?请参考 1分钟快速新手图文教程</p>
+        <p>兼容ngrokc公版插件使用说明 详见</p>
+            </div>
+            <div class="col-md-5" style="background: url(/static/images/join-box2.png) no-repeat">
+                <div style="height: 400px;"></div>
+            </div>
+        </div>
+
+   </div>
+    <div class="container" style="margin-top: 30px;margin-bottom: 60px;">
+
+        <h2>PHP 版本客户端下载</h2>
+        <p>只要能运行php,即可使用natapp内网穿透服务</p>
+        <p>详情请点击 natapp-php客户端下载&使用说明</p>
+    </div>
 {% endblock %}
