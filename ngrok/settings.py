@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'ngrok',
         'USER':'root',
-        'PASSWORD':'root',
-        'HOST':'localhost',
+        'PASSWORD':'Zeruibighui!@#1',
+        'HOST':'127.0.0.1',
         'PORT':'3306',
     }
 }
@@ -129,4 +129,6 @@ STATICFILES_DIRS = [
     ('js', os.path.join(STATIC_ROOT, 'js').replace('\\', '/')),
     ('images', os.path.join(STATIC_ROOT, 'images').replace('\\', '/')),
     ('fonts', os.path.join(STATIC_ROOT, 'fonts').replace('\\', '/')),
+    ('bower_components', os.path.join(STATIC_ROOT, 'bower_components').replace('\\', '/')),
+    ('dist', os.path.join(STATIC_ROOT, 'dist').replace('\\', '/')),
  ]
