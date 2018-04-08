@@ -34,6 +34,6 @@ urlpatterns = [
     url(r'doc', view.doc),
     url(r'qq', view.qq),
     url(r'forget', view.forget),
-    url(r'user', views.userCenter),
+    url(r'member/dashborad', views.userCenter),
 
 ]
